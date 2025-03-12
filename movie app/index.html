@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+<!-- import -poppins-font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+<!-- Import font -->
+
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+<!-- boxicon-icon -->
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<!-- fav-icon -->
+
+<link rel="shortcut icon" href="./Images/fav-icon.png">
+
+<body>
+
+
+    <main>
+
+        <!-- NAVBAR -->
+
+        <header class="header-area">
+
+            <div class="navbar-area">
+
+                <div class="container">
+                    <nav class="site-navbar">
+                        <a href="#" class="site-logo">Movies<span>.hd</span></a>
+
+                        <ul>
+                            <li><a href="">HOME</a></li>
+                            <li><a href="">ABOUT</a></li>
+                            <li><a href="">SERVICE</a></li>
+                            <li><a href="">contact</a></li>
+                        </ul>
+
+                        <!-- search bar -->
+
+                        <form class="search">
+                            <input type="text" placeholder="search movies...">
+                            <button id="search-btn"><i class='bx bx-search'></i></button>
+                        </form>
+
+                        <button class="nav-toggler">
+                            <i class='bx bx-menu'></i>
+                        </button>
+
+                    </nav>
+                </div>
+
+
+            </div>
+
+        </header>
+
+
+        <!-- here i am appending my searched data -->
+
+        <div id="main-container"></div>
+
+
+
+        <!-- section 1 -->
+
+
+        <section class="section-1" id="section-1">
+
+            <slider class="main-slider">
+                <div class="btn-wrap">
+                    <i class='bx bxs-chevron-left' id="backbtn"></i>
+
+                    <div class="slider">
+                        <div>
+                            <a href="#">
+                                <div class="poster">
+                                    <img src="./Images/p-1.jpg" alt="img1">
+                                    <div class="poster-text"><span>Full HD</span></div>
+
+                                    <div class="bottom-text">
+                                        <div class="movie-name">
+                                            <div class="year">2014<span>3.5<i class='bx bxs-star'></i></span></div>
+                                            <div class="title">Paranormal Activity: The Marked Ones</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                            <a href="movie-page.html">
+                                <div class="poster">
+                                    <img src="./Images/p-2.jpg" alt="img2">
+                                    <div class="poster-text"><span>Full HD</span></div>
+
+                                    <div class="bottom-text">
+                                        <div class="movie-name">
+                                            <div class="year">2003<span>4.8<i class='bx bxs-star'></i></span></div>
+                                            <div class="title">Pirates of Caribbean: The Curse of the Black Pearl</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="poster">
+                                    <img src="./Images/p-4.jpg" alt="img3">
+                                    <div class="poster-text"><span>Full HD</span></div>
+                                    <div class="bottom-text">
+                                        <div class="movie-name">
+                                            <div class="year">2021<span>3.2<i class='bx bxs-star'></i></span></div>
+                                            <div class="title">Venom: Let There Be Carnage</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <div class="poster">
+                                    <img src="./Images/p-3.jpg" alt="img4">
+                                    <div class="poster-text"><span>Full HD</span></div>
+
+                                    <div class="bottom-text">
+                                        <div class="movie-name">
+                                            <div class="year">2020<span>3.5<i class='bx bxs-star'></i></span></div>
+                                            <div class="title">Bloodshot</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="poster">
+                                    <img src="./Images/p-5.jpg" alt="img5">
+                                    <div class="poster-text"><span>Full HD</span></div>
+
+                                    <div class="bottom-text">
+                                        <div class="movie-name">
+                                            <div class="year">2024<span>4.5<i class='bx bxs-star'></i></span></div>
+                                            <div class="title">Deadpool & Wolverine</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="poster">
+                                    <img src="./Images/p-6.jpg" alt="img6">
+                                    <div class="poster-text"><span>Full HD</span></div>
+
+                                    <div class="bottom-text">
+                                        <div class="movie-name">
+                                            <div class="year">2014<span>2.9<i class='bx bxs-star'></i></span></div>
+                                            <div class="title">Black Widow</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <i class='bx bxs-chevron-right' id="nextbtn"></i>
+                </div>
+
+            </slider>
+
+        </section>
+
+
+        <!-- section 2 -->
+
+
+        <section class="section-2" id="section-2">
+
+            <div class="movie-heading">
+                <h3>Latest <span>Movies</span></h3>
+            </div>
+
+            <div class="container">
+
+                <div class="card-div">
+
+                    <div class="img">
+                        <img src="./Images/post-1.jpg" alt="post-img-1">
+                    </div>
+
+                    <div class="poster-text-1"><span>Full HD</span></div>
+
+                    <div class="card-bottom-text">
+                        <div class="card-year">
+                            2021
+                        </div>
+
+                        <div class="card-title">
+                            <p>venom: let There Be Carnage</p>
+                        </div>
+
+                        <div class="type">
+                            <div>
+                                <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                            </div>
+
+                            <div>
+                                <span>5.2</span>
+                                <img src="./Images/IMDb-icon.png" alt="imdb-logo" class="card-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-div">
+
+                    <div class="img">
+                        <img src="./Images/post-2.jpg" alt="post-img-2">
+                    </div>
+
+                    <div class="poster-text-1"><span>Full HD</span></div>
+
+                    <div class="card-bottom-text">
+                        <div class="card-year">
+                            2021
+                        </div>
+
+                        <div class="card-title">
+                            <p>The Tommorow War</p>
+                        </div>
+
+                        <div class="type">
+                            <div>
+                                <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                            </div>
+
+                            <div>
+                                <span>6.7</span>
+                                <img src="./Images/IMDb-icon.png" alt="imdb-logo" class="card-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-div">
+
+                    <div class="img">
+                        <img src="./Images/post-3.jpg" alt="post-img-3">
+                    </div>
+
+                    <div class="poster-text-1"><span>Full HD</span></div>
+
+                    <div class="card-bottom-text">
+                        <div class="card-year">
+                            2021
+                        </div>
+
+                        <div class="card-title">
+                            <p>Jungle Cruice</p>
+                        </div>
+
+                        <div class="type">
+                            <div>
+                                <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                            </div>
+
+                            <div>
+                                <span>4.4</span>
+                                <img src="./Images/IMDb-icon.png" alt="imdb-logo" class="card-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-div">
+
+                    <div class="img">
+                        <img src="./Images/post-4.jpg" alt="post-img-4">
+                    </div>
+
+                    <div class="poster-text-1"><span>Full HD</span></div>
+
+                    <div class="card-bottom-text">
+                        <div class="card-year">
+                            2020
+                        </div>
+
+                        <div class="card-title">
+                            <p>Dune</p>
+                        </div>
+
+                        <div class="type">
+                            <div>
+                                <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                            </div>
+
+                            <div>
+                                <span>8.8</span>
+                                <img src="./Images/IMDb-icon.png" alt="imdb-logo" class="card-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-div">
+
+                    <div class="img">
+                        <img src="./Images/post-5.jpg" alt="post-img-5">
+                    </div>
+
+                    <div class="poster-text-1"><span>Full HD</span></div>
+
+                    <div class="card-bottom-text">
+                        <div class="card-year">
+                            2020
+                        </div>
+
+                        <div class="card-title">
+                            <p>The Suicide Squade</p>
+                        </div>
+
+                        <div class="type">
+                            <div>
+                                <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                            </div>
+
+                            <div>
+                                <span>7.4</span>
+                                <img src="./Images/IMDb-icon.png" alt="imdb-logo" class="card-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-div">
+
+                    <div class="img">
+                        <img src="./Images/post-6.jpg" alt="post-img-6">
+                    </div>
+
+                    <div class="poster-text-1"><span>Full HD</span></div>
+
+                    <div class="card-bottom-text">
+                        <div class="card-year">
+                            2020
+                        </div>
+
+                        <div class="card-title">
+                            <p>No Time To Die</p>
+                        </div>
+
+                        <div class="type">
+                            <div>
+                                <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                            </div>
+
+                            <div>
+                                <span>8.3</span>
+                                <img src="./Images/IMDb-icon.png" alt="imdb-logo" class="card-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-div">
+
+                    <div class="img">
+                        <img src="./Images/post-7.jpg" alt="post-img-7">
+                    </div>
+
+                    <div class="poster-text-1"><span>Full HD</span></div>
+
+                    <div class="card-bottom-text">
+                        <div class="card-year">
+                            2020
+                        </div>
+
+                        <div class="card-title">
+                            <p>Old</p>
+                        </div>
+
+                        <div class="type">
+                            <div>
+                                <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                            </div>
+
+                            <div>
+                                <span>7.6</span>
+                                <img src="./Images/IMDb-icon.png" alt="imdb-logo" class="card-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="card-div">
+
+                    <div class="img">
+                        <img src="./Images/post-8.jpg" alt="post-img-8">
+                    </div>
+
+                    <div class="poster-text-1"><span>Full HD</span></div>
+
+                    <div class="card-bottom-text">
+                        <div class="card-year">
+                            2020
+                        </div>
+
+                        <div class="card-title">
+                            <p>Rumble</p>
+                        </div>
+
+                        <div class="type">
+                            <div>
+                                <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                            </div>
+
+                            <div>
+                                <span>4.4</span>
+                                <img src="./Images/IMDb-icon.png" alt="imdb-logo" class="card-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="card-div">
+
+                    <div class="img">
+                        <img src="./Images/post-9.jpg" alt="post-img-9">
+                    </div>
+
+                    <div class="poster-text-1"><span>Full HD</span></div>
+
+                    <div class="card-bottom-text">
+                        <div class="card-year">
+                            2020
+                        </div>
+
+                        <div class="card-title">
+                            <p>WandaVision</p>
+                        </div>
+
+                        <div class="type">
+                            <div>
+                                <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                            </div>
+
+                            <div>
+                                <span>3.4</span>
+                                <img src="./Images/IMDb-icon.png" alt="imdb-logo" class="card-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-div">
+
+                    <div class="img">
+                        <img src="./Images/post-10.jpg" alt="post-img-10">
+                    </div>
+
+                    <div class="poster-text-1"><span>Full HD</span></div>
+
+                    <div class="card-bottom-text card-10">
+                        <div class="card-year">
+                            2020
+                        </div>
+
+                        <div class="card-title">
+                            <p>Prisoners of the Ghostland(2021)</p>
+                        </div>
+
+                        <div class="type">
+                            <div>
+                                <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                            </div>
+
+                            <div>
+                                <span>8.5</span>
+                                <img src="./Images/IMDb-icon.png" alt="imdb-logo" class="card-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-div">
+
+                    <div class="img">
+                        <img src="./Images/post-11.jpg" alt="post-img-11">
+                    </div>
+
+                    <div class="poster-text-1"><span>Full HD</span></div>
+
+                    <div class="card-bottom-text">
+                        <div class="card-year">
+                            2020
+                        </div>
+
+                        <div class="card-title">
+                            <p>Luca</p>
+                        </div>
+
+                        <div class="type">
+                            <div>
+                                <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                            </div>
+
+                            <div>
+                                <span>9.6</span>
+                                <img src="./Images/IMDb-icon.png" alt="imdb-logo" class="card-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-div">
+
+                    <div class="img">
+                        <img src="./Images/post-12.jpg" alt="post-img-12">
+                    </div>
+
+                    <div class="poster-text-1"><span>Full HD</span></div>
+
+                    <div class="card-bottom-text">
+                        <div class="card-year">
+                            2020
+                        </div>
+
+                        <div class="card-title">
+                            <p>Annette</p>
+                        </div>
+
+                        <div class="type">
+                            <div>
+                                <a href="#">Horror</a>, <a href="#">Mistery</a>, <a href="#">Thriller</a>
+                            </div>
+
+                            <div>
+                                <span>5.5</span>
+                                <img src="./Images/IMDb-icon.png" alt="imdb-logo" class="card-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>
